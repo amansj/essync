@@ -19,6 +19,7 @@
     <modules>
         <module>cookle-core</module>
         <module>cookle-sesync</module>
+		<module>cookle-rest</module>
     </modules>
 
     <dependencyManagement>
