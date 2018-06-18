@@ -11,5 +11,6 @@ import java.util.List;
  */
 public interface RecipeRepositoryES extends ElasticsearchRepository<RecipeEntityES, Integer>, PagingAndSortingRepository<RecipeEntityES, Integer> {
     List<RecipeEntityES> findByName(String name);
+
 }
 

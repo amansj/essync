@@ -39,7 +39,8 @@ public class MysqlESSync {
             RecipeEntityES recipeEntityES = new RecipeEntityES();
             recipeEntityES.setAuthor(recipeEntity.getAuthor());
             recipeEntityES.setCategories(recipeEntity.getCategories().stream().map(CategoryEntity::getName).collect(Collectors.toList()));
-            recipeEntityES.setImages(recipeEntity.getImages().getUrl());
+            if (recipeEntity.getImages() != null)
+                recipeEntityES.setImages(recipeEntity.getImages().getUrl());
             recipeEntityES.setCookTime(recipeEntity.getCookTime());
             recipeEntityES.setCost(recipeEntity.getCost());
             recipeEntityES.setDifficulty(recipeEntity.getDifficulty());
