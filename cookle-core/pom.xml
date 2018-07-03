@@ -15,7 +15,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>${spring.boot}</version>
         </dependency>
 
         <dependency>
@@ -49,13 +48,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-
         </plugins>
     </build>
 
@@ -63,8 +55,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mysql.driver.version>5.1.15</mysql.driver.version>
         <java.version>1.8</java.version>
-        <spring.boot>1.4.1.RELEASE</spring.boot>
+        <spring.boot>1.4.7.RELEASE</spring.boot>
     </properties>
-
 
 </project>

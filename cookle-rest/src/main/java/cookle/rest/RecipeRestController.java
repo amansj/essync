@@ -18,13 +18,17 @@ public class RecipeRestController {
 
     @RequestMapping("/recipe/by-name")
     public List<RecipeEntityES> greeting(@RequestParam(value = "name", defaultValue = "pasta") String name) {
-        return recipeRepositoryES.findByName(name);
+        String nameTmp=name.toString()+"";
+        System.out.print(nameTmp.length());
+        return recipeRepositoryES.findByName(nameTmp);
     }
 
     @RequestMapping("/recipe/all")
     public List<RecipeEntityES> greeting() {
         List<RecipeEntityES> list = new ArrayList<>();
-        recipeRepositoryES.findAll().forEach(list::add);
+        //recipeRepositoryES.findAll().forEach(list::add);
+        for(RecipeEntityES re:recipeRepositoryES.findAll())
+            list.add(re);
         return list;
     }
 }
