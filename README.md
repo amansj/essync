@@ -5,5 +5,6 @@ Data is written to elastic search. Spring-data-elasticsearch is used to write to
 Also a rest service is provied to send queries to embedded elasticsearch. Only one method is provied to search by name. Rest application uses embedded servlet container so no container is needed. 
 Sample url is given below:
 
-http://localhost:8080/recipe/by-name?name=mynameis
+http://localhost:8080/recipe/by-name?name=pasta
 
+http://localhost:8080/recipe/all
